@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Kids</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: black; /* Fond du site en noir */
+        }
+        .hero {
+            background-image: url('https://katv.com/resources/media2/16x9/8191/986/0x107/90/9010bdcf-46aa-466d-8511-a93da98706bd-AdobeStock_586534093.jpeg');
+            background-size: cover;
+            background-position: center top;
+            height: 65vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Style pour les catégories */
+        .categories {
+            padding: 2rem;
+            color: white;
+            margin-top: 2rem;
+        }
+        .category {
+            margin-bottom: 3rem;
+        }
+        .category h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        /* Conteneur des affiches dans chaque catégorie */
+        .category .poster-container {
+            display: flex;
+            overflow-x: scroll;
+            gap: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        /* Affiches */
+        .category .poster {
+            width: 200px;
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+        }
+
+        /* Ta chaîne Kids en continu */
+        .ta-chaine-kids {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 2rem;
+            padding: 2rem;
+        }
+        .ta-chaine-kids .poster {
+            width: 300px;
+            height: 450px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+        }
+
+        .ta-chaine-kids .poster2 {
+            width: 300px;
+            height: 450px;
+            background-size: 10px;
+            background-position: center;
+            border-radius: 10px;
+        }
+
+        .red-rectangle {
+            width: 1200px;  /* Largeur du rectangle */
+            height: 50px; /* Hauteur du rectangle */
+            background-color: red; /* Couleur de fond rouge */
+            margin: 0px; /* Espace autour du rectangle */
+            display: flex; /* Utilisation de flexbox pour centrer le texte */
+            justify-content: center; /* Centre horizontalement */
+            align-items: center; /* Centre verticalement */
+            color: white; /* Couleur du texte en blanc */
+            font-size: 20px; /* Taille du texte */
+            text-align: center; /* Centrer le texte */
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>REXFLIX KIDS</h1>
+    </div>
+
+    <div class="red-rectangle">
+        <p>Bienvenue dans l'univers des enfants ! Le site est encore en cours de finalisation, mais il sera bientôt complètement terminé. /// Attention : Pour profiter de vos films et séries sans publicités, suivez les instructions en <a href="https://www.pastery.net/vtajqs/">cliquant ici</a>.</p></p></p> <!-- Le texte à l'intérieur -->
+    </div>
+
+    <!-- Section des catégories -->
+    <div class="categories">
+        <!-- Les immanquables -->
+        <div class="category">
+            <h2>Les immanquables</h2>
+            <div class="poster-container">
+                <div class="poster" style="background-image: url('https://image.tmdb.org/t/p/w1280/2izN47iCYlLXDX1CcbKN1OkKeaf.jpg');"></div>
+                <div class="poster" style="background-image: url('https://auvio.rtbf.be/_next/image?url=https%3A%2F%2Fds.static.rtbf.be%2Fimage%2Fmedia%2Fprogram%2F2x3%2F770xauto%2F1%2F9%2F6%2F196c05e1ef88e3f29b004ecaa413d51f.jpg&w=1920&q=75');"></div>
+                <div class="poster" style="background-image: url('https://auvio.rtbf.be/_next/image?url=https%3A%2F%2Fds.static.rtbf.be%2Fimage%2Fmedia%2Fprogram%2F2x3%2F770xauto%2F1%2F9%2F6%2F196c05e1ef88e3f29b004ecaa413d51f.jpg&w=1920&q=75');"></div>
+                <div class="poster" style="background-image: url('https://auvio.rtbf.be/_next/image?url=https%3A%2F%2Fds.static.rtbf.be%2Fimage%2Fmedia%2Fprogram%2F2x3%2F770xauto%2F1%2F9%2F6%2F196c05e1ef88e3f29b004ecaa413d51f.jpg&w=1920&q=75');"></div>
+            </div>
+        </div>
+        
+        <!-- 3-5 ans -->
+        <div class="category">
+            <h2>3-5 ans</h2>
+            <div class="poster-container">
+                <div class="poster" style="background-image: url('https://image.tmdb.org/t/p/original/9S65uEjDqepU7d71CNmxIBHHdo.jpg');"></div>
+                <div class="poster" style="background-image: url('https://image.tmdb.org/t/p/w1280/z9LFlpS1Ei9AJEPr1RmLirkv1yS.jpg');"></div>
+                <div class="poster" style="background-image: url('https://image.tmdb.org/t/p/w1280/lu2DNsIQgn1Jb6djHvrqJSUQXXl.jpg');"></div>
+                <div class="poster" style="background-image: url('https://image.tmdb.org/t/p/original/iJPbRASktYW0I009Ktc2zUE6Fvg.jpg');"></div>
+                <div class="poster" style="background-image: url('https://image.tmdb.org/t/p/w1280/wjvIpBw8DQPmODBCC04znKJePDZ.jpg');"></div>
+                <div class="poster" style="background-image: url('https://image.tmdb.org/t/p/original/iJPbRASktYW0I009Ktc2zUE6Fvg.jpg');"></div>
+            </div>
+        </div>
+        
+        <!-- 6-8 ans -->
+        <div class="category">
+            <h2>6-8 ans</h2>
+            <div class="poster-container">
+                <div class="poster" style="background-image: url('https://image.tmdb.org/t/p/w1280/93wxtwtx9d68hNiIrBzyJrwC9QK.jpg');"></div>
+                <div class="poster" style="background-image: url('https://auvio.rtbf.be/_next/image?url=https%3A%2F%2Fds.static.rtbf.be%2Fimage%2Fmedia%2Fprogram%2F2x3%2F770xauto%2F1%2F9%2F6%2F196c05e1ef88e3f29b004ecaa413d51f.jpg&w=1920&q=75');"></div>
+                <div class="poster" style="background-image: url('https://auvio.rtbf.be/_next/image?url=https%3A%2F%2Fds.static.rtbf.be%2Fimage%2Fmedia%2Fprogram%2F2x3%2F770xauto%2F1%2F9%2F6%2F196c05e1ef88e3f29b004ecaa413d51f.jpg&w=1920&q=75');"></div>
+                <div class="poster" style="background-image: url('https://auvio.rtbf.be/_next/image?url=https%3A%2F%2Fds.static.rtbf.be%2Fimage%2Fmedia%2Fprogram%2F2x3%2F770xauto%2F1%2F9%2F6%2F196c05e1ef88e3f29b004ecaa413d51f.jpg&w=1920&q=75');"></div>
+            </div>
+        </div>
+        
+        <!-- 9-12 ans -->
+        <div class="category">
+            <h2>9-12 ans</h2>
+            <div class="poster-container">
+                <div class="poster" style="background-image: url('https://image.tmdb.org/t/p/w1280/zSQM2Zud5G5nrdEA4t0CtFZQF22.jpg');"></div>
+                <div class="poster" style="background-image: url('https://image.tmdb.org/t/p/w1280/5HAO4Jz3RZOCQAOpneJxVrBCVfm.jpg');"></div>
+                <div class="poster" style="background-image: url('https://image.tmdb.org/t/p/w1280/evDCpiQqAvEnR14exVUqnbC0W3U.jpg');"></div>
+                <div class="poster" style="background-image: url('https://image.tmdb.org/t/p/w1280/isNlyvnNUkoZJYXhZVtDgGmuWCs.jpg');"></div>
+                <div class="poster" style="background-image: url('https://image.tmdb.org/t/p/original/z8x3AFvJTaS7Tq5eOHlAfzQHIOp.jpg');"></div>
+            </div>
+            
+        </div>
+
+            <!-- Films pour toute la famille -->
+    <div class="category">
+        <h2>Films pour toute la famille</h2>
+        <div class="poster-container">
+            <div class="poster" style="background-image: url('https://image.tmdb.org/t/p/w1280/iJSzSCY2W8BeQ3HkvlFHNwb1bif.jpg');" onclick="window.location.href='https://uqload.net/zwe78suesctl.html';"></div>
+            <div class="poster" style="background-image: url('https://fr.web.img6.acsta.net/c_310_420/pictures/20/12/30/22/38/1906134.jpg');" onclick="window.location.href='page2.html';"></div>
+            <div class="poster" style="background-image: url('https://via.placeholder.com/200x300?text=Films+familiaux3');" onclick="window.location.href='page3.html';"></div>
+            <div class="poster" style="background-image: url('https://via.placeholder.com/200x300?text=Films+familiaux4');" onclick="window.location.href='page4.html';"></div>            
+        </div>
+    </div>
+        
+        <!-- Section en direct -->
+<div class="category">
+    <h2>Chaine en direct 24h/24h</h2>
+    <div class="poster-container">
+        <div class="poster" style="background-image: url('https://fusion.molotov.tv/arts/i/446x588/Ch8SHQoU-3PGGjJIwlTjY-R9w_8hqPjJSOMSA2pwZxgBCh8IARIbChTPS-XDkzLo4GReMGo53FjAhEDHzBIDcG5n/jpg');" onclick="window.location.href='https://french-tv.lol/player/fsplayer.php?id=208';"></div>
+        <div class="poster" style="background-image: url('https://standfirst-designweek-production.imgix.net/uploads/2015/02/BOOMERANG-logo3.jpg?fit=crop&crop=faces&q=80&auto=compress,format&w=696&h=773&dpr=2.625');" onclick="window.location.href='https://french-tv.lol/player/fsplayer.php?id=180';"></div>
+        <div class="poster" style="background-image: url('https://i.pinimg.com/736x/06/a7/88/06a7887aa78281701823dd7fd4fd005c.jpg');" onclick="window.location.href='https://french-tv.lol/player/fsplayer.php?id=76';"></div>
+        <div class="poster" style="background-image: url('https://i.pinimg.com/474x/3d/c4/af/3dc4af62681fdb1e37b608c7daa93e07.jpg');" onclick="window.location.href='https://french-tv.lol/player/fsplayer.php?id=178';"></div>
+        <div class="poster" style="background-image: url('https://i.pinimg.com/736x/81/8d/a5/818da52247869887d2a0e152793e726a.jpg');" onclick="window.location.href='https://french-tv.lol/player/fsplayer.php?id=106';"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,308 @@
+/* Réinitialisation de certains styles par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fond noir pour la page */
+body {
+    background-color: #000; /* Fond noir */
+    color: white; /* Texte en blanc */
+    font-family: Arial, sans-serif;
+}
+
+/* Styles pour la barre de navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1c1c1c; /* Fond sombre pour la barre de navigation */
+    color: white;
+}
+
+/* Logo */
+.logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+/* Liste des liens */
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Met les liens en ligne */
+    align-items: center;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+/* Liens */
+.nav-links a {
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #ffcc00; /* Jaune clair au survol */
+}
+
+/* Bouton Kids */
+.kids {
+    background: rgb(0, 0, 0);
+    color: black;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.kids:hover {
+    background: gray;
+}
+
+/* Partie droite (avec les boutons Login et Sign Up) */
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right .login-btn {
+    padding: 8px 15px;
+    font-size: 1rem;
+    background-color: #f60000;
+    color: #1c1c1c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.nav-right .signup-btn {
+    padding: 8px 15px;
+    font-size: 1rem;
+    background-color: #ffcc00;
+    color: #1c1c1c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Effet au survol des boutons */
+.nav-right .login-btn:hover,
+.nav-right .signup-btn:hover {
+    background-color: #e6b800;
+}
+
+/* Section de l'image banner */
+.banner img {
+    width: 100%;
+    height: 400px; /* Ajusté la hauteur de l'image */
+    object-fit: cover;
+}
+
+/* Section principale pour chaque catégorie */
+.trending-section {
+    margin-top: 40px;
+    text-align: left; /* Titre aligné à gauche */
+    margin-left: 20px;
+}
+
+.trending-section h2 {
+    color: #ffcc00; /* Jaune pour le titre */
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Conteneur pour les affiches */
+.films-container {
+    overflow-x: auto;
+    padding: 10px;
+}
+
+.films {
+    display: flex;
+    gap: 15px;
+}
+
+.film {
+    position: relative;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+/* Animations sur les affiches */
+.film img {
+    width: 180px; /* Largeur de l'affiche */
+    height: 280px; /* Hauteur de l'affiche */
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Animation au survol de l'affiche */
+.film:hover img {
+    transform: scale(1.1); /* Effet de zoom */
+    filter: brightness(0.8);
+}
+
+/* Ajout d'un effet sur l'élément "film" lorsqu'on survole */
+.film a {
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.film a:hover {
+    transform: scale(1.05);
+}
+
+/* Pour s'assurer que les catégories PREMIUM et autres s'affichent bien */
+.trending-section {
+    margin-bottom: 50px;
+}
+
+/* Changement de la couleur au survol de la catégorie PREMIUM */
+.film:hover {
+    cursor: pointer;
+}
+
+/* ----------------------------------------- */
+/* Ajout des informations et des boutons au survol des films */
+/* ----------------------------------------- */
+.film .info {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 0.9rem;
+}
+
+/* Affichage des informations au survol */
+.film:hover .info {
+    opacity: 1;
+}
+
+/* Boutons ronds */
+.film .info .btn {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Changement de couleur au survol des boutons */
+.film .info .btn:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/* Icônes des boutons */
+.film .info .btn .emoji {
+    font-size: 1.5rem;
+}
+
+/* Informations supplémentaires (âge et durée) */
+.film .info .details {
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Ajout de l'âge et de la durée */
+.film .info .details span {
+    display: block;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+/* Style du footer */
+footer {
+    background-color: #111;
+    color: #777;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between; /* Espacer les colonnes également */
+    text-align: left; /* Aligner le texte à gauche dans chaque colonne */
+    margin-bottom: 30px; /* Ajouter un espacement entre les colonnes et le texte du bas */
+}
+
+.footer-column {
+    width: 30%; /* Chaque colonne occupe environ 30% de la largeur */
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    color: #777;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+footer ul li a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    font-size: 14px;
+    color: #777;
+    margin-top: 20px;
+}
+
+.attention-bar {
+    background-color: red; /* Barre rouge */
+    color: white; /* Texte en blanc */
+    text-align: center; /* Centrer le texte */
+    padding: 10px 0; /* Espacement autour du texte */
+    font-size: 20px; /* Taille du texte */
+    font-weight: bold; /* Texte en gras */
+}
+
+.static-bar {
+    background-color: yellow; /* Fond jaune */
+    color: black; /* Texte en noir */
+    text-align: center; /* Centrer le texte */
+    padding: 10px 0; /* Espacement autour du texte */
+    font-size: 18px; /* Taille du texte */
+    font-weight: bold; /* Texte en gras */
+    width: 100%; /* S'assurer que la barre prend toute la largeur */
+    position: relative; /* Pour mieux contrôler la position si nécessaire */
+    box-sizing: border-box; /* Inclure le padding dans la largeur totale */
+}
+
+.static-bar p {
+    margin: 0; /* Retirer la marge par défaut du paragraphe */
+}
+
